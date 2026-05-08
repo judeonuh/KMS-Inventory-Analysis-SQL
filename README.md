@@ -1,8 +1,5 @@
-# KMS-Inventory-Analysis
-This repository contains files relevant to the analysis of the KMS inventory dataset as part of my capstone project while training at Incubator Hub
-
-## Company Overview
-Kultra Mega Stores (KMS), headquartered in Lagos, specialises in office supplies and furniture. Its customer base includes individual consumers, small businesses (retail), and large corporate clients (wholesale) across Lagos, Nigeria.
+# KMS-Inventory-Analysis  
+Kultra Mega Stores (KMS), headquartered in Lagos, specialises in office supplies and furniture. Its customer base includes individual consumers, small businesses (retail), and large corporate clients (wholesale) across Lagos, Nigeria. Analysis of 4 years of order data revealed that high and critical orders were frequently shipped via slow delivery trucks, while low-priority orders used Express Air. This systematic mismatch is estimated to be driving avoidable costs and customer dissatisfaction.
 
 ## Aim
 My task as a Business Intelligence Analyst was to support the Abuja division of KMS by analysing the [Excel data file](https://github.com/judeonuh/KMS-Inventory-Analysis/blob/main/KMS%20Sql%20Case%20Study.csv) (containing order data from 2009 to 2012) provided by the Business Manager, using SQL.
@@ -39,13 +36,13 @@ This analysis explores KMS's historical order data from 2009 to 2012 to identify
 > *  Change the datatypes of Row_ID and Order_ID column to Integer.
 > *  Allow nulls for columns: Unit_Price, Profit, and Product_Base_Margin.
 - Aggregations performed for sales, profits, shipping costs, and order counts.  
-- Customer segmentation based on sales performance and return behavior.  
+- Customer segmentation based on sales performance and return behaviour.  
 - Shipping method analysis performed in relation to order priority levels.  
 
 ---
 
 ## Data Cleaning  
-The Dataset was checked for duplicates, none found. Null values were replaced with 0
+The Dataset was checked for duplicates; none were found. Null values were replaced with 0
 
 ---
 
@@ -63,14 +60,14 @@ Technology products significantly contribute to overall revenue with total sales
 **Top 3 Regions by Total Sales:**  
 - West: $3,597,549.27  
 - Ontario: $3,063,212.48  
-- Prarie: $2,837,304.61  
+- Prairie: $2,837,304.61  
 
 **Bottom 3 Regions by Total Sales:**  
 - Nunavut: $116,376.48  
 - Northwest Territories: $800,847.33  
 - Yukon: $975,867.38  
 
-**Insight:** Sales seem to be concentrated in West and Ontario; northern territories significantly underperform.  
+**Insight:** Sales seem to be concentrated in the West and Ontario; northern territories significantly underperform.  
 **Recommendation:**  
 - Targeted marketing campaigns in underperforming regions like Nunavut.  
 - Assess product relevance and accessibility in those regions.  
@@ -78,7 +75,7 @@ Technology products significantly contribute to overall revenue with total sales
 ---
 
 ### 3. Appliances Sales in Ontario
-With a total sales $3,063,212.48, there appears to be a Strong demand for appliances in Ontario.  
+With total sales $3,063,212.48, there appears to be a Strong demand for appliances in Ontario.  
 **Recommendation:**  
 - Maintain appliance stock levels and offer bundle promotions in Ontario.  
 - Explore similar strategies in regions with comparable demographics.  
@@ -87,16 +84,16 @@ With a total sales $3,063,212.48, there appears to be a Strong demand for applia
 
 ### 4. Revenue Growth Recommendations for Bottom 10 Customers
 **Recommendation:**  
-- Personalized offers and incentives.  
+- Personalised offers and incentives.  
 - Conduct satisfaction surveys to identify issues.  
 - Introduce loyalty programs or product bundles.  
 
 ---
 
 ### 5. Shipping Cost by Method
-A total of $51,971.94 was spent on shipping via delivery trucks. Though economical, delivery trucks are slow; and high reliance on them may affect service levels.  
+A total of $51,971.94 was spent on shipping via delivery trucks. Though economical, delivery trucks are slow, and a high reliance on them may affect service levels.  
 **Recommendation:**  
-- Optimize shipping method selection based on order priority.  
+- Optimise shipping method selection based on order priority.  
 - Educate staff on appropriate shipping choices.  
 
 ---
@@ -107,7 +104,7 @@ A total of $51,971.94 was spent on shipping via delivery trucks. Though economic
 | Emily Phan         | 117,124.44  | Technology       |  
 | Deborah Brumfield  | 97,433.13   | Technology       |    
 
-The Table above shows that KMS' top customers show strong preference for technology products.  
+The Table above shows that KMS's top customers show a strong preference for technology products.  
 **Recommendation:**  
 - Provide VIP incentives (discounts, loyalty cards, etc.) for these customers.  
 - Offer early access to new technology products.  
@@ -117,7 +114,7 @@ The Table above shows that KMS' top customers show strong preference for technol
 ### 7. Top Small Business Customer
 Dennis Kane is the top small business customer with a total sales of $75,967.59, making him a High-value small business customer.  
 **Recommendation:**  
-- Establish long-term business relationship with Dennis Kane.  
+- Establish a long-term business relationship with Dennis Kane.  
 - Explore upselling opportunities.  
 
 ---
@@ -132,7 +129,7 @@ Between 2009 and 2012, Adam Hart placed the highest number of orders (27 Orders)
 ---
 
 ### 9. Most Profitable Consumer Customer
-Emily Phan is KMS' most profitable consumer customer with a total profit contribution of $34,005.44  
+Emily Phan is KMS's most profitable consumer customer with a total profit contribution of $34,005.44  
 **Recommendation:**  
 - Reward Emily with loyalty incentives.  
 - Seek product feedback to enhance offerings.  
@@ -172,7 +169,7 @@ Query Result:
 ### 11. Appropriateness of Shipping Costs Based on Order Priority
 **Findings:**  
 - High & Critical orders often shipped via slow, economical methods (Delivery Truck).  
-- Low-priority orders sometimes shipped via expensive Express Air.  
+- Low-priority orders are sometimes shipped via expensive Express Air.  
 
 **Insight:** Shipping method selection is inconsistent with order urgency, risking customer dissatisfaction.  
 **Recommendation:**  
@@ -180,7 +177,7 @@ Query Result:
   - **Express Air:** Only for High & Critical orders.  
   - **Delivery Truck:** Only for Low & Not Specified orders.  
   - **Regular Air:** For Medium-priority or justified urgent backups.  
-- Automate shipping selection within ordering system.  
+- Automate shipping selection within the ordering system.  
 - Conduct staff training and monitor compliance.  
 
 ---
@@ -195,4 +192,4 @@ Query Result:
 ---
 
 ## Conclusion
-This analysis highlights key areas where KMS can improve operational efficiency, revenue generation, and customer satisfaction. By implementing the outlined recommendations, KMS Abuja can strengthen market presence and optimize business processes.
+This analysis highlights key areas where KMS can improve operational efficiency, revenue generation, and customer satisfaction. By implementing the outlined recommendations, KMS Abuja can strengthen market presence and optimise business processes.
