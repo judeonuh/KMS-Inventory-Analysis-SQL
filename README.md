@@ -8,7 +8,8 @@ My task as a Business Intelligence Analyst was to support the Abuja division of 
 - [Company Overview](#company-overview)
 - [Aim](#aim)
 - [Introduction](#introduction)  
-- [Data Overview](#data-overview)  
+- [Data Overview](#data-overview)
+- [Skills Demonstrated](#skills-demonstrated)
 - [Methodology](#methodology)
 - [Data Cleaning](#data-cleaning)
 - [Analysis and Recommendations](#analysis-and-recommendations)  
@@ -25,6 +26,15 @@ This analysis explores KMS's historical order data from 2009 to 2012 to identify
 ## Data Overview
 - **Source:** KMS Order Dataset (2009-2012)  
 - **Data Points:** Order Priority,	Order Quantity,	Sales,	Discount,	Ship Mode,	Profit,	Shipping Cost,	Region,	Customer Segment,	Product Category, Returns, etc.  
+
+---
+
+## Skills Demonstrated
+* SQL Server Management Studio (SSMS)
+* SQL
+* JOIN
+* OFFSET
+* Sales analytics
 
 ---
 
