@@ -67,6 +67,26 @@ Technology products significantly contribute to overall revenue with total sales
 ---
 
 ### 2. Top & Bottom Regions by Sales
+
+```SQL
+-- Top 3
+SELECT 
+	Region, 
+	SUM(Sales) AS RegionSales
+FROM KMS_tb
+GROUP BY Region
+ORDER BY RegionSales DESC
+OFFSET 0 ROWS FETCH NEXT 3 ROWS ONLY;
+
+-- Bottom 3
+SELECT 
+	Region, 
+	SUM(Sales) AS RegionSales
+FROM KMS_tb
+GROUP BY Region
+ORDER BY RegionSales ASC
+OFFSET 0 ROWS FETCH NEXT 3 ROWS ONLY;
+```
 **Top 3 Regions by Total Sales:**  
 - West: $3,597,549.27  
 - Ontario: $3,063,212.48  
@@ -101,6 +121,15 @@ With total sales $3,063,212.48, there appears to be a Strong demand for applianc
 ---
 
 ### 5. Shipping Cost by Method
+```SQL
+-- 5. KMS incurred the most shipping cost using which shipping method?
+SELECT
+	Ship_Mode,
+	SUM(Shipping_Cost) AS ShippingCost
+FROM KMS_tb
+GROUP BY Ship_Mode
+ORDER BY ShippingCost DESC;
+```
 A total of $51,971.94 was spent on shipping via delivery trucks. Though economical, delivery trucks are slow, and a high reliance on them may affect service levels.  
 **Recommendation:**  
 - Optimise shipping method selection based on order priority.  
